@@ -6,4 +6,3 @@
 **Visualization:**
 
 ![ ](vis.jpg)
-![ ](vis2.jpg)
