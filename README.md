@@ -5,6 +5,6 @@
 |#CodeChallenge | Solution |
 | --- | --- |
 | ReversArray | [reversearray](/reversearray)| 
-| Row 1, Column 1 | Row 1, Column 2 |
+|Shifft Array |[Shifft Array 1](array-insert-shift) |
 | Row 2, Column 1 | Row 2, Column 2 | 
 
