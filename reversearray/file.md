@@ -4,11 +4,11 @@
 *****
 ## Whiteboard Process
 
-![ ](main.jpg)
-![ ](duaa.jpg)
+
 **Visualization:**
 ![ ](vis.jpg)
 *****
+![](Whiteboard.jpg)
 ## Approach & Efficiency
 
 

@@ -1,14 +1,40 @@
 def reverseArray(arr):
-    revarray = []
-    for i in range(len(arr)-1, -1, -1):
-       revarray.append(arr[i])
-       print (revarray)
-    return revarray
+    reversed_Array = [None] *len(arr)
+    start_Index = 0
+    end_Index = len(arr) - 1
+    while start_Index < len(arr):
+        reversed_Array[start_Index] = arr[end_Index]
+        start_Index += 1
+        end_Index-= 1 
+        print (reversed_Array)
+    print (f""" \n******************************\t
+The reversed arrray is: {reversed_Array} 
+              
+          
+            """)
+    
 
-arr2 = [1, 2, 3, 4, 5]
 
-print ('''********************************************
- ****** The reverse Array is :''',reverseArray(arr2))
+
+        
+         
+fruits = ["apple", "banana", "cherry"]    
+if __name__=="__main__":
+      
+      reverseArray(fruits)    
+    
+    
+
+
+# Names=["Dua'a", "Sami","Dana"]
+# reverseArray(Names)
+
+
+
+
+
+
+
 
 
 
