@@ -1,8 +1,8 @@
 # Reverse-Array
 *********
- reverse array
+
 *****
-## Whiteboard Process
+# Whiteboard Process
 
 *****
 *****
