@@ -5,8 +5,7 @@
 ## Whiteboard Process
 
 
-**Visualization:**
-![ ](vis.jpg)
+
 *****
 ![](Whiteboard.jpg)
 ## Approach & Efficiency
