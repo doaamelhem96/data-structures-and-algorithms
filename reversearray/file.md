@@ -4,8 +4,7 @@
 *****
 ## Whiteboard Process
 
-
-
+*****
 *****
 ![](Whiteboard.jpg)
 ## Approach & Efficiency
