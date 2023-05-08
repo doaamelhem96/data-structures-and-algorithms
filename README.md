@@ -6,5 +6,6 @@
 | --- | --- |
 | ReversArray |[reversearray](/reversearray)| 
 |Shifft Array |[Shifft Array 1](array-insert-shift) |
-| Binary-Search  | (Binarysearch)[../README.md] |
+| Binary-Search| [BinarySearch](./array-binary-search/readme.md)
+
 *******
