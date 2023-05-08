@@ -1,7 +1,9 @@
 # Binary-Search Challenge 
 ****
 **Whiteboard  for this challenege:**
-![](Wb.jpg)
+*********
+![](w.jpg)
+
 **********
 # The approach of Binary-Search method :
 Binary search is an approach where you repeatedly divide a sorted list in half to search for a target value. Here's a simplified explanation of the approach:
