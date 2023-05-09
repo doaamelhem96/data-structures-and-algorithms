@@ -6,11 +6,10 @@ def reverseArray(arr):
         reversed_Array[start_Index] = arr[end_Index]
         start_Index += 1
         end_Index-= 1 
+        
         print (reversed_Array)
-    print (f""" \n******************************\t
-The reversed arrray is: {reversed_Array} 
-              
-          
+    print (f"""************************************************************************ \nThe original array was: {arr}\tThe reversed arrray is: {reversed_Array}
+    *********************************************************************
             """)
     
 

@@ -20,6 +20,7 @@ Space complexity: O(n) - since the algorithm creates a new array of size n to st
 [Link to Code](data.py)
 
 -----------
+#psuecode :
 def reverseArray(arr):
     revarray = []
     for i in range(len(arr)-1, -1, -1):
