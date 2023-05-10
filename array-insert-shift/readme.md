@@ -18,9 +18,27 @@ It's worth noting that the function does not modify the original array and inste
 ![](ins.jpg)
 
 *****
-**Approach & Efficiency**
- I created a function and used len to calculate the length of array, then i declare mid variable which equal the length devided by 2.
-Also i used if condition to  check if the length equal even number or not. Finally i used insert() which take index and value.
+**Approach:**
+The insertShiftArray function follows the following approach to insert a value into the middle of an array:
+
+Determine the length of the input array arr and calculate the middle index middle by performing an integer division (n // 2).
+Create a new array array with a length one greater than the original array to accommodate the additional value.
+Check if the length of the array is even or odd using the condition if n % 2 == 0.
+If the length is even:
+Copy the elements from arr to array up to the middle index using a while loop.
+Insert the value at the middle index of array.
+Continue copying the remaining elements from arr to array, shifting them to the right by one index.
+If the length is odd:
+Copy the elements from arr to array up to the middle index plus one using a while loop.
+Insert the value at the index middle + 1 of array.
+Continue copying the remaining elements from arr to array, shifting them to the right by one index.
+Return the modified array with the new value inserted in the middle.
+****
+**Efficiency:**
+
+Time Complexity: The time complexity of this approach is O(n), where n is the length of the input array. The function needs to iterate through the elements of the input array to copy them to the new array. In the worst case, it performs two passes over the elements.
+Space Complexity: The space complexity is O(n) as well. The function creates a new array array with a length one greater than the input array. The space required grows linearly with the input size.
+Overall, the insertShiftArray function has a time complexity of O(n) and a space complexity of O(n). It efficiently inserts a value into the middle of the input array while maintaining the relative order of the other elements.
 
 # solution:
 def insertShiftArray(arr, value):
