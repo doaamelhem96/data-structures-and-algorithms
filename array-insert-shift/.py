@@ -48,7 +48,6 @@ def removeShiftArray(z):
                 nz[j] = z[i]
                 j += 1
             i += 1
-    
     return nz
 
 if __name__=="__main__":
