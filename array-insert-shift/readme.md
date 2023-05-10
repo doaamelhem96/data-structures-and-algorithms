@@ -1,4 +1,4 @@
-# array_-_Insert_Shift
+# array_Insert_Shift
 ## Summary:
 The insertShiftArray function takes an array arr and a value value as input and inserts the value in the middle of the array. If the length of the input array is even, the function finds the middle position as n // 2 and shifts the elements to the right of the middle to make space for the new value. If the length is odd, the middle position is n // 2 + 1, and the elements to the right of the middle are shifted. The function creates a new array array with a length of n + 1 to accommodate the additional value and returns the modified array.
 
