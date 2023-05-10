@@ -1,9 +1,7 @@
 ![](shift.jpg)
 ![](vis2.jpg)
 [Link to coding](.py)
-![](shift.jpg)
-*****
-![](vis2.jpg)
+
 
 *****
 **Approach & Efficiency**
@@ -26,5 +24,6 @@ value = 3
 new_arr = insertShiftArray(arr, value)
 print(new_arr)
 
-[Link to coding](.py)
+
+
 
