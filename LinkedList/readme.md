@@ -19,3 +19,6 @@ Insertion: Inserting a new node at the beginning of the linked list has a time c
 Search (Includes): Searching for a value in the linked list has a time complexity of O(n) in the worst case, where n is the number of nodes in the list. This is because the search needs to iterate over the nodes until it finds a matching value or reaches the end of the list.
 String Representation: Creating a string representation of the linked list has a time complexity of O(n) since it requires iterating over all the nodes in the list to concatenate their values.
 Overall, the linked list provides efficient insertion at the beginning of the list, but searching for a value or creating a string representation requires traversing the entire list, which takes linear time.
+
+[link to code](Ds/linkedlist.py)
+[link to pull](https://github.com/doaamelhem96/data-structures-and-algorithms/pull/11)
