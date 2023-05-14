@@ -12,11 +12,13 @@ class Node:
         self._next = _next
 '''
 create a Linked list as one of the type of Data-Structure
-it contains from nodes and i called it LinkedList class using Paskal convention
+it contains from nodes and i called it LinkedList class using Paskall convention
 and as you know any linked list contains head like value in node
 to create none linkedlist i give a head =none value
 ,,, 
-i create insert method to insert node and includes and string method
+In the LinkedList class  
+I created an insert method to insert a node that includes a method for checking whether it occurs in a linked list or not
+ and string method to returne all nodes in linked list as value>value>value 
 
 '''
 class LinkedList:
@@ -24,30 +26,44 @@ class LinkedList:
         self.head = head
 
     def insert(self, value):
-        new_node = Node(value)
-        if self.head is None:
-            self.head = new_node
-        else:
-            new_node.next = self.head
-            self.head = new_node
+     new_node = Node(value)
+     if self.head is None:
+        self.head = new_node
+     else:
+        new_node._next = self.head
+        self.head = new_node
+
 
     def includes(self, value):
         current = self.head
         while current:
             if current.value == value:
                 return True
-            current = current.next
+            current = current._next
         return False
 
-    def to_string(self):
-        if self.head is None:
-            return "None"
-        current = self.head
+
+    def __str__(self):
         result = ""
+        current = self.head
         while current:
-            result += f"{{ {current.value} }} -> "
-            current = current.next
-        result += "None"
+            result += str(current.value)
+            if current._next:
+             result += " -> "
+            current = current._next
+        result += " -> None"
         return result
-if __name__=='__main__':
+
+if __name__ == '__main__':
     ll = LinkedList()
+
+    # Test the insert method
+    ll.insert(3)
+    ll.insert(2)
+    ll.insert(1)
+    print(ll)  # Output: 1 -> 2 -> 3 -> None
+
+    # Test the includes method
+    print(ll.includes(2))  # Output: True
+    print(ll.includes(4))  # Output: False
+
