@@ -8,6 +8,6 @@
 |Shifft Array |[Shifft Array 1](array-insert-shift) |
 | Binary-Search| [BinarySearch](./array-binary-search/readme.md)
 |Single-LinkedList|[LinkedList](./LinkedList/readme.md)
-|Single-LinkedList|[LinkedList](./LinkedList/readme.md)
+|LinkedList|[LinkedList](./extension/readme.md)
 |fromend-LinkedList|[LinkedList](./LinkedList/readme.md)
 *******
