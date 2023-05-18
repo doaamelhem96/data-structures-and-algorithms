@@ -9,5 +9,5 @@
 | Binary-Search| [BinarySearch](./array-binary-search/readme.md)
 |Single-LinkedList|[LinkedList](./LinkedList/readme.md)
 |Single-LinkedList|[LinkedList](./LinkedList/readme.md)
-|fromend-LinkedList|[LinkedListtail](./LinkedList_7/Ds/re)
+|fromend-LinkedList|[LinkedListtail](./LinkedList_7/Ds/readme.md)
 *******
