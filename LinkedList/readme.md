@@ -1,4 +1,4 @@
-# **Author : Dua'a Melhem**
+# **Single-Linkedlist**
 
 *****
 ## WhiteBoard for this challenge 
@@ -20,7 +20,7 @@ to_string(self): Converts the linked list to a string representation. The method
 Approach:
 The code uses a singly linked list approach, where each node contains a value and a reference to the next node. The linked list class maintains a head attribute, which points to the first node in the list. When a new node is inserted, it is added at the beginning of the list by updating the head reference. The includes method traverses the list starting from the head and checks if any node has the target value. The to_string method iterates over the list, starting from the head, and builds a string representation by concatenating the values of each node.
 ****
-### Efficiency:
+### approach and Efficiency:
 
 Insertion: Inserting a new node at the beginning of the linked list has a time complexity of O(1) since it only requires updating the head reference.
 Search (Includes): Searching for a value in the linked list has a time complexity of O(n) in the worst case, where n is the number of nodes in the list. This is because the search needs to iterate over the nodes until it finds a matching value or reaches the end of the list.

@@ -17,8 +17,8 @@ and as you know any linked list contains head like value in node
 to create none linkedlist i give a head =none value
 ,,, 
 In the LinkedList class  
-I created an insert method to insert a node that includes a method for checking whether it occurs in a linked list or not
- and string method to returne all nodes in linked list as value>value>value 
+I created an insert method to insert a node and  include as a method for checking whether it occurs in a linked list or not
+ finally i added string method to returne all nodes in linked list as value>value>value 
 
 '''
 class LinkedList:
