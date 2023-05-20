@@ -44,6 +44,8 @@ class LinkedList:
 
 
     def __str__(self):
+        if self.head is None:
+            return "None"
         result = ""
         current = self.head
         while current:
