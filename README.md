@@ -10,6 +10,6 @@
 |Single-LinkedList|[LinkedList](./LinkedList/readme.md)
 |LinkedList|[LinkedList](./extension/readme.md)
 |fromend-LinkedList|[LinkedList](./LinkedList/readme.md)
-|fromend-LinkedList|[LinkedList](./stack_queue/stack_queue_project/)
+|stack_queue|[stack_queue](./stack_queue/README.md)
 
 *******
