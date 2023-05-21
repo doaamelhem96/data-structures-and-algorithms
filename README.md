@@ -9,7 +9,7 @@
 | Binary-Search| [BinarySearch](./array-binary-search/readme.md)
 |Single-LinkedList|[LinkedList](./LinkedList/readme.md)
 |LinkedList|[LinkedList-extension](./linked_list_insertions/README.md)
-|fromend-LinkedList|[LinkedList](./LinkedList/readme.md)
+|Kth-LinkedList|[KthLinkedList](./LinkedList_kth/readme.md)
 |stack_queue|[stack_queue](./stack_queue/README.md)
 
 *******
