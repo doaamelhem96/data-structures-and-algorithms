@@ -1,9 +1,7 @@
-# **Single-Linkedlist**
-
+# challenge **Single-Linkedlist**
 *****
 ## WhiteBoard for this challenge 
 ![](lw.jpg)
-
 ******
 ## Summary:
 The code defines a Node class that represents a single node in a linked list. Each node contains a value and a reference to the next node in the list. The code also defines a LinkedList class that represents a linked list data structure. The linked list class has methods to insert a new node, check if a value is present in the list, and convert the list to a string representation. The code also includes a simple test using the LinkedList class.
