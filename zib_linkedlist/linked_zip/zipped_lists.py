@@ -1,11 +1,18 @@
 
 
 class Node:
+    '''
+    created class called Node took 2 arguments next and value  why ? to
+    create linkedlist later *_^
+    '''
     def __init__(self, value=None, next=None):
         self.value = value
         self.next = next
 
 class LinkedList:
+    '''
+    class called linkedList to treat with funciton called zip also later
+    '''
     def __init__(self, head=None):
         self.head = head
 
@@ -27,7 +34,11 @@ class LinkedList:
             current = current.next
         return result + "None"
 
-def zipped(li_1, li_2):
+def zipped(li_1, li_2): 
+    '''
+    function called zipped took 2 arguments li_1,li_2 
+    then merge betweent their nodes also later ((when i called it *_^))
+    '''
     merged_list = LinkedList()
 
     if not li_1:
