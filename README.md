@@ -11,6 +11,6 @@
 |ExtensionsLinkedList|[Extensions_LinkedList](./linked_list_insertions/README.md)
 |Kth-LinkedList|[Kth-LinkedList](./LinkedList_kth/readme.md)
 |stack_queue|[stack_queue](./stack_queue/README.md)
-|zip_linkedlis|[zip_linkedlis](./zib_linkedlist/README.md)
+|zip_linkedlist|[zip_linkedlist](./zib_linkedlist/README.md)
 
 *******
