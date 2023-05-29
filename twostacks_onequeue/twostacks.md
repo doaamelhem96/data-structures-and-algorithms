@@ -1,7 +1,7 @@
 # Code Challenge: Class 11
 ## stack-queue-pseudo
 ***
-## WhitwBoard:
+## WhiteBoard:
 ![](2in1.jpg)
 ****
 ## Summary -approach && effenciy:
