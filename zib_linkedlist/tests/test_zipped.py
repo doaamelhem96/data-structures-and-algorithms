@@ -1,21 +1,44 @@
 import pytest
 from linked_zip.zipped_lists import Node,LinkedList,zipped
+def test_node():
+    # Create a node instance 
+    node2=Node(value=2,next=None)
+    node = Node(value=1, next=node2)
+   
+
+    # Check the value attribute
+    actual = node.value
+    expected = 1
+    assert actual == expected
+
+    # Check the next attribute
+    actual = node.next
+    expected = node2
+    assert actual == expected
+
 # Test cases for the LinkedList class
 def test_linked_list():
     # Create a linked list
     linked_list = LinkedList()
+    # Check the head attribute
+    actual = linked_list.head
+    expected = None
+    assert actual ==expected
 
     # Insert values
     linked_list.insert(1)
+    
+    actual= linked_list.to_string()
+    expected= "1 -> None"
+    assert actual==expected
+    # Traverse the linked list and print values
+    # Insert more values
     linked_list.insert(2)
     linked_list.insert(3)
-    linked_list.insert(4)
-
-    # Traverse the linked list and print values
-    current = linked_list.head
-    while current:
-        print(current.value)
-        current = current.next
+    
+    actual = linked_list.to_string()
+    expected = "1 -> 2 -> 3 -> None"
+    assert actual == expected
 
 # Test case for the zipped function
 def test_zipped():
@@ -36,11 +59,15 @@ def test_zipped():
     # Merge the linked lists using the zipped function
     merged_list = zipped(li_1.head, li_2.head)
 
-    # Traverse the merged list and print values
-    current = merged_list.head
-    while current:
-        print(current.value)
-        current = current.next
+    # Convert merged list to string representation
+    actual = merged_list.to_string()
+
+    # Define the expected string representation
+    expected = "1 -> 2 -> 3 -> 4 -> 5 -> 6 -> None"
+
+    # Compare actual and expected values
+    assert actual == expected
+
 
 # Run the test cases
 test_linked_list()
