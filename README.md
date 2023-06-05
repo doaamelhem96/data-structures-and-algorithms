@@ -14,5 +14,5 @@
 |zip_linkedlist|[zip_linkedlist](./zib_linkedlist/README.md)
 |2stacks-and1queue |[ stack-queue-pseudo](./twostacks_onequeue/twostacks.md)
 |2stacks-and1queue |[ stack-queue-Animals](./stack_queue_animalshelter/Animals.md)
-|2stacks-and1queue |[ stack-queue-brackets](./stack_queuebracket/Brackets.md)
+|Balance brackets |[ stack-queue-brackets](./stack_queuebracket/Brackets.md)
 *******
