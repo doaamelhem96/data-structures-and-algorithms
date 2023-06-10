@@ -6,6 +6,7 @@ class Node:
         self.right = None
 
 class BinaryTree:
+    '''class to add node'''
     def __init__(self): 
         self.root = None
 
@@ -44,6 +45,7 @@ class BinaryTree:
 
 
 class BinarySearchTree(BinaryTree):
+    '''class to search node on tree '''
     def add(self, value):
         if not self.root:
             self.root = Node(value)
