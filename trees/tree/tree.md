@@ -29,3 +29,5 @@ The time complexity (Big O notation) of the provided binary tree and binary sear
 It's important to note that these time complexities assume a balanced binary search tree. If the tree is unbalanced, the worst-case time complexity may degrade to O(n) for the binary search tree operations.
 
 The space complexity for both the binary tree and binary search tree operations is O(n), where n is the number of nodes in the tree. This is because the recursive depth during tree traversal or search can go up to the height of the tree, which is proportional to the number of nodes in the worst case scenario.
+
+[link to my code ](tree.py)
