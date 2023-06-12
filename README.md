@@ -16,4 +16,5 @@
 |2stacks-and1queue |[ stack-queue-Animals](./stack_queue_animalshelter/Animals.md)
 |Balance brackets |[ stack-queue-brackets](./stack_queuebracket/Brackets.md)
 |Trees |[ Binary Tree ](./trees/tree/tree.md)
+|Trees |[ Max-Binary Tree ](./treemax/treemax.md)
 *******
