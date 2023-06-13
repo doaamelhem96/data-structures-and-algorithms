@@ -1,4 +1,4 @@
-# CC16 Fined max value in tree DS 
+# CC16 Find max value in tree DS 
 ## whiteboard
 ![cc16](cc16.jpg)
 
