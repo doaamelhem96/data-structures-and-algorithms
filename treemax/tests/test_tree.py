@@ -1,5 +1,5 @@
 import pytest
-from tree import Node, BinaryTree, BinarySearchTree
+from tree import *
 
 def test_preorder_traversal():
     # Create a binary tree
@@ -62,18 +62,23 @@ def test_add_and_contains():
     assert bst.contains(3) is True
     assert bst.contains(4) is False
 
+def test_find_maximum_value_empty_tree():
+        tree = BinarySearchTree()
+        assert tree.find_maximum_value() is None
+
 def test_find_maximum_value():
-    # Create a binary search tree
-    bst = BinarySearchTree()
-    bst.add(4)
-    bst.add(2)
-    bst.add(6)
-    bst.add(1)
-    bst.add(3)
+        bst = BinarySearchTree()
+        # Construct the binary search tree
+        bst.add(10)
+        bst.add(5)
+        bst.add(15)
+        bst.add(20)
+        bst.add(8)
+        bst.add(3)
+        # Test the find_maximum_value method
+        assert bst.find_maximum_value() == 20
 
-    # Call the method being tested
-    maximum_value = bst.find_maximum_value()
 
-    # Perform assertion to validate the result
-    assert maximum_value == 6
+
+
 

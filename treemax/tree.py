@@ -6,7 +6,7 @@ class Node:
         self.right = None
 
 class BinaryTree:
-    '''class to add node'''
+    '''class to treat with Tree'''
     def __init__(self): 
         self.root = None
 
@@ -82,15 +82,23 @@ class BinarySearchTree(BinaryTree):
         else:
             return self._contains_recursive(node.right, value)
 
+    
+
     def find_maximum_value(self):
         # Find the maximum value stored in the tree
         if not self.root:
             return None
 
-        return self._find_maximum_value_recursive(self.root)
+        self.max_value = float('-inf')
+        self._find_maximum_value_recursive(self.root)
+        return self.max_value
 
     def _find_maximum_value_recursive(self, node):
-        if not node.right:
-            return node.value
+        if not node:
+            return
 
-        return self._find_maximum_value_recursive(node.right)
+        if node.value > self.max_value:
+            self.max_value = node.value
+
+        self._find_maximum_value_recursive(node.left)
+        self._find_maximum_value_recursive(node.right)
