@@ -6,4 +6,4 @@ divide the input list into two portions: a sorted portion and an unsorted portio
 Big(o):Time complexity : o(n*n)
 Space Complexity:O(1)
 
-[link to code ](code.py)
+[link to code ](cc.py)
