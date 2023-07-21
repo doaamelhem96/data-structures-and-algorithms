@@ -1,5 +1,5 @@
 
-
+# Code Challenge 27:Merge Sort
 1. Initial array: `[8, 4, 23, 42, 16, 15]`
 
 2. Split the array into two halves:
@@ -30,3 +30,7 @@ The final sorted array is `[4, 8, 15, 16, 23, 42]`.
 efficiency :
 time >> o(nlog(n))
 space >> O(n)
+## you need to initilize my code to write 
+ *** python merge.py
+
+[link to my code](merge.py)
