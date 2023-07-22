@@ -19,4 +19,5 @@
 |Trees |[ Max-Binary Tree ](./treemax/treemax.md)
 |List |[ Insertion_Sort ](./Insertion_Sort/insertion.md)
 |Merge-sorting |[ Merge_Sort ](./merge/merge.md)
+|Hash Table |[ Hash_Table ](./Hashtable/hashtable.md)
 *******
