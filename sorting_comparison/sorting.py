@@ -1,7 +1,7 @@
 class Movie:
     '''
-   declaration a class called Movie ,, that generates an instance movie 
-   with many properties like title,year ,genres
+   Declaration a class called Movie ,, that generates an instance movie 
+   with many properties such as title,year ,genres
     '''
     def __init__ (self, title, year, genres):
         self.title = title
