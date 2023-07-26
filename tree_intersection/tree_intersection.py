@@ -5,8 +5,8 @@ class Node:
         self.right = None #right branch
 
 
-def tree_intersection(tree1, tree2): # declare a method that tooked two trees as an argument 
-    def traverse_tree(tree, hashmap):# declare a method that tooked two arguments one of them is tree and the second is hashmap where i stored the value.        if tree:
+def tree_intersection(tree1, tree2): # declare a method that took two trees as an argument 
+    def traverse_tree(tree, hashmap):# declare a method that took two arguments one of them is tree and the second is hashmap where i stored the value.        if tree:
             hashmap[tree.value] = True # Recursively function base case
             traverse_tree(tree.left, hashmap) # for left branch
             traverse_tree(tree.right, hashmap)# for right branch
@@ -25,7 +25,6 @@ def tree_intersection(tree1, tree2): # declare a method that tooked two trees as
     find_intersection(tree2, tree1_values, common_values)
 
     return common_values
-
 
 
 
