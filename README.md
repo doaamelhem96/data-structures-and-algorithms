@@ -22,4 +22,5 @@
 |Comparison-sorting |[ Comparison-sorting ](./sorting_comparison/Readme.md)
 |Hash Table |[ Hash_Table ](./Hashtable/hashtable.md)
 |Hash Table |[ Hashmap_Repeated_word ](./hashmap_repeated_word/repeated.md)
+|Tree_Intersection |[ Tree_Intersection](./tree_intersection/tree_intersection.md)
 *******
