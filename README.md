@@ -23,4 +23,5 @@
 |Hash Table |[ Hash_Table ](./Hashtable/hashtable.md)
 |Hash Table |[ Hashmap_Repeated_word ](./hashmap_repeated_word/repeated.md)
 |Tree_Intersection |[ Tree_Intersection](./tree_intersection/tree_intersection.md)
+|Hashmapping_joinleft |[ Hashmap_joinleft](./hastable_left_join/left.md)
 *******
