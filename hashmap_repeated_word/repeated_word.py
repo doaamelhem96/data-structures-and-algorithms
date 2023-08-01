@@ -38,7 +38,3 @@ def repeated_word(input_string):
     return repeated_word
 
 
-# Test case
-input_string = "This is a test string with a repeated word. Test it."
-result = repeated_word(input_string)
-print("Result:", result)
