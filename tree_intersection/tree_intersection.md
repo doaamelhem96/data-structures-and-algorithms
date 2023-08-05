@@ -9,13 +9,11 @@ The algorithm defines a Node class to represent nodes in the binary tree, where 
 
 Approach:
 
-Define the Node class with attributes for the node value, left branch, and right branch.
-In the tree_intersection function:
-a. Define traverse_tree to recursively traverse one tree (tree1) and store its values in a hashmap.
-b. Define find_intersection to recursively traverse the other tree (tree2) and find common values by checking against the hashmap.
-c. Create a hashmap (tree1_values) to store the values of tree1.
-d. Call traverse_tree with tree1 and the hashmap.
-e. Create an empty set (common_values) to store the common values between the two trees.
-f. Call find_intersection with tree2, the hashmap, and the set of common values.
-g. Return the set of common values.
+Hash Table for tree1: Implement a hash table (or a similar data structure) to store the values of tree1. This hash table will allow efficient lookup operations.
+
+Collect Values from tree1: Traverse tree1 using a tree traversal algorithm (e.g., in-order, pre-order, post-order) and insert each value into the hash table.
+
+Find Common Values: Traverse tree2 using the same traversal algorithm as before. For each value encountered in tree2, check if it exists in the hash table created from tree1. If it does, add it to a set of common values.
+
+Return Common Values: Return the set of common values obtained in the previous step.
 [Link to code](./tree_intersection.py)
