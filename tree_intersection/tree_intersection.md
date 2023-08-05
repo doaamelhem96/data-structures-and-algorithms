@@ -16,4 +16,5 @@ Collect Values from tree1: Traverse tree1 using a tree traversal algorithm (e.g.
 Find Common Values: Traverse tree2 using the same traversal algorithm as before. For each value encountered in tree2, check if it exists in the hash table created from tree1. If it does, add it to a set of common values.
 
 Return Common Values: Return the set of common values obtained in the previous step.
+efficiency : Big (O) time ans space complexity is o (n)
 [Link to code](./tree_intersection.py)
