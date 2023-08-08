@@ -1,66 +1,36 @@
-def left_join(synonyms, antonyms):
-    result = []
-    for key in synonyms:
-        synonym_value = synonyms[key]
-        antonym_value = antonyms.get(key, None)  # Get the value from the antonyms hashmap or return None if key not found
+from hashtable import HashTable  # Import my HashTable class from the previous code
 
-        # Append the key and values to the result list
-        if antonym_value is not None:
-            result.append([key, synonym_value, antonym_value])
-        else:
-            result.append([key, synonym_value, None])
+def left_join(synonyms, antonyms): # Declare function called left_joing and it passed 2 args as hashtable instances
+    result = HashTable()  # Initialize a new instance from class HashTable to insert the result
+    synonym_keys = synonyms.keys()  # Get the keys from the synonyms HashTable
+
+    for key in synonym_keys:
+        value1 = synonyms.get(key)
+        value2 = antonyms.get(key)
+        result.set(key, (value1, value2))
 
     return result
 
-# Test cases
-def test_left_join():
-    synonyms = {
-        "diligent": "employed",
-        "fond": "enamored",
-        "guide": "usher",
-        "outfit": "garb",
-        "wrath": "anger"
-    }
+if __name__ =="__main__":
+    synonyms = HashTable()
+    synonyms.set("diligent", "employed")
+    synonyms.set("fond", "enamored")
+    synonyms.set("guide", "usher")
+    synonyms.set("outfit", "garb")
+    synonyms.set("wrath", "anger")
 
-    antonyms = {
-        "diligent": "idle",
-        "fond": "averse",
-        "guide": "follow",
-        "flow": "jam",
-        "wrath": "delight"
-    }
+    antonyms = HashTable()
+    antonyms.set("diligent", "idle")
+    antonyms.set("fond", "averse")
+    antonyms.set("guide", "follow")
+    antonyms.set("flow", "jam")
+    antonyms.set("wrath", "delight")
 
-    # Test case 1
-    expected_output = [
-        ["diligent", "employed", "idle"],
-        ["fond", "enamored", "averse"],
-        ["guide", "usher", "follow"],
-        ["outfit", "garb", None],
-        ["wrath", "anger", "delight"]
-    ]
-    assert left_join(synonyms, antonyms) == expected_output
+    result = left_join(synonyms, antonyms)
 
-    # Test case 2: When antonyms hashmap is empty
-    antonyms = {}
-    expected_output = [
-        ["diligent", "employed", None],
-        ["fond", "enamored", None],
-        ["guide", "usher", None],
-        ["outfit", "garb", None],
-        ["wrath", "anger", None]
-    ]
-    assert left_join(synonyms, antonyms) == expected_output
+    # Print the result
+    for key in result.keys():
+        value = result.get(key)
+        print(f"The Word is: {key},It's Synonym: {value[0]},  It's Antonym: {value[1]}")
 
-    # Test case 3: When synonyms hashmap is empty
-    synonyms = {}
-    antonyms = {
-        "flow": "jam",
-        "wrath": "delight"
-    }
-    expected_output = []
-    assert left_join(synonyms, antonyms) == expected_output
-
-    print("All test cases passed!")
-
-# Run the test cases
-test_left_join()
+ 

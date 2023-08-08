@@ -1,10 +1,13 @@
 # Code Challenge 33 LEFT JOIN for 2 Hashmaps. 
 ## WhiteBoard
 ![](cc33.jpg)
+## Summary :
+
+The left_join function takes two hashmaps (synonyms and antonyms) as input and performs a LEFT JOIN operation on them
 ### Approach&& efficiency:
 Approach and Efficiency:
-The chosen approach involves iterating through the keys of the first hashmap and performing constant-time operations for each key.  The algorithm efficiently handles the LEFT JOIN logic and returns the desired result as a list of lists, where each inner list represents a row of data containing the key, synonym, and antonym (if present).
-Big(o):Time complexity : o(n)
+For each key, the function creates a tuple consisting of the synonym value from synonyms and the corresponding antonym value from antonyms, and then stores this tuple in the result hashmap.  .
+Big(o):Time complexity : o(n) : n the number of keys in Synonym
 Space Complexity:O(n)
 
 [link to code ](lefjoin.py)
