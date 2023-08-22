@@ -29,34 +29,23 @@ class Graph:
 
 
 
+
+
     def depth_first(self, start_node):
-        visited = set()   
-        result = []      
-        
+        if start_node not in self.vertices:
+            raise ValueError(f"Start node '{start_node}' not found in the graph.")
+
+        visited = set()
+        result = []
+
         def dfs_helper(node):
-            visited.add(node)    # Mark the current node as visited
-            result.append(node)  # Add the current node to the result
-            
+            visited.add(node)
+            result.append(node)
+
             neighbors = self.get_neighbors(node)
             for neighbor, _ in neighbors:
                 if neighbor not in visited:
-                    dfs_helper(neighbor)  # Recursively visit neighbors
-        
+                    dfs_helper(neighbor)
+
         dfs_helper(start_node)
         return result
-
-# Example usage
-graph = Graph()
-graph.add_vertex("A")
-graph.add_vertex("B")
-graph.add_vertex("C")
-graph.add_vertex("D")
-
-graph.add_edge("A", "B", weight=3)
-graph.add_edge("A", "C", weight=2)
-graph.add_edge("B", "D", weight=4)
-graph.add_edge("C", "D", weight=1)
-
-start_node = "A"
-dfs_result = graph.depth_first(start_node)
-print("Depth-first traversal:", dfs_result)
